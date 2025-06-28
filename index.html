@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Alert Box</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <button onclick="showAlert()">Show Alert</button>
+
+  <script>
+    function showAlert() {
+      const alertBox = document.createElement('div');
+      alertBox.className = 'alert';
+      alertBox.textContent = 'This is a custom alert box.';
+      document.body.appendChild(alertBox);
+    }
+  </script>
+
+</body>
+
+</html>
